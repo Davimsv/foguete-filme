@@ -1,0 +1,143 @@
+
+/* VARIABLES */
+:root{
+    --ivory: #fff1e7;
+    --red: #e61123;
+    --blue: #475380;
+    --dark-blue: #181e26;
+}
+
+/* CUSTOM FONTS */
+.anton-regular {
+    font-family: "Anton", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.libre-baskerville-italic {
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: italic;
+}
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.libre-baskerville-bold {
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
+}
+.libre-baskerville-light {
+    font-family: "Libre Baskerville", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style:normal;
+}
+
+/* GENERAL STYLES */
+body{
+    background-color: var(--ivory);
+}
+
+/* MODIFIER CLASSES */
+.text-justify{
+    text-align: justify !important;
+}
+.clr-ivory{
+    color: var(--ivory);
+}
+.clr-ivory-{
+    color: var(--ivory);
+}
+.clr-blue{
+    color: var(--blue);
+}
+.clr-red{
+    color: var(--red);
+}
+.bg-red{
+    background-color: var(--red);
+}
+.bg-blue{
+    background-color: var(--blue);
+}
+.bg-dark-blue{
+    background-color: var(--dark-blue);
+}
+
+/* PAGE STYLES */
+
+/* HERO */
+.hero{
+    background: url(./assets/hero.png) no-repeat center/cover;
+    height: 95dvh;
+}
+.hero-title{
+    color: transparent;
+    background: url(./assets/title-hr.png) no-repeat center/contain;
+    vertical-align: middle;
+    min-height: 145px;
+}
+@media (max-width: 576px) {
+    .hero-title{
+        background-image: url(./assets/title-vt.png);
+    }
+}
+.hero-sub{
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* INTRO */
+
+.intro-title{
+    font-size: clamp(4rem, 10vw, 7rem);
+}
+.intro-img{
+    position: absolute;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    z-index: 1;
+    width: 100%;
+    max-width: 650px;
+}
+
+/* SUMMARY */
+
+.summary-area::after{
+    content: 'SINOPSE';
+    color: var(--dark-blue);
+    opacity: .2;
+    line-height: .8;
+    font-size: 36vw;
+    letter-spacing: -15px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Anton", sans-serif;
+}
+
+/* CASTING */
+
+.casting-title{
+    font-size: clamp(1.5rem, 4vw, 3rem);
+}
+
+/* FOOTER */
+.footer-img-wrapper span{
+    font-size: .75rem;
+}
+.footer-img img{
+    max-width: 130px;
+}
+
+.splide__progress__bar {
+  height: 3px;
+  background-color: var(--dark-blue);
+}
