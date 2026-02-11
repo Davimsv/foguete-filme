@@ -41,6 +41,7 @@
 /* GENERAL STYLES */
 body{
     background-color: var(--ivory);
+    overflow-x: hidden;
 }
 
 /* MODIFIER CLASSES */
@@ -140,4 +141,5 @@ body{
 .splide__progress__bar {
   height: 3px;
   background-color: var(--dark-blue);
+
 }
