@@ -39,9 +39,10 @@
 }
 
 /* GENERAL STYLES */
-body{
+body, main{
     background-color: var(--ivory);
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+    /* width: 100%; */
 }
 
 /* MODIFIER CLASSES */
@@ -56,6 +57,9 @@ body{
 }
 .clr-blue{
     color: var(--blue);
+}
+.clr-dark-blue{
+    color: var(--dark-blue);
 }
 .clr-red{
     color: var(--red);
@@ -81,7 +85,7 @@ body{
     color: transparent;
     background: url(./assets/title-hr.png) no-repeat center/contain;
     vertical-align: middle;
-    min-height: 145px;
+    min-height: 125px;
 }
 @media (max-width: 576px) {
     .hero-title{
@@ -109,7 +113,7 @@ body{
 
 /* SUMMARY */
 
-.summary-area::after{
+/* .summary-area::after{
     content: 'SINOPSE';
     color: var(--dark-blue);
     opacity: .2;
@@ -122,8 +126,19 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Anton", sans-serif;
-}
+} */
 
+/* VIDEO */
+
+.video-area iframe{
+    height: 540px;
+}
+@media (max-width: 600px) {
+    .video-area iframe{
+        height: auto;
+    }
+    
+}
 /* CASTING */
 
 .casting-title{
@@ -135,11 +150,10 @@ body{
     font-size: .75rem;
 }
 .footer-img img{
-    max-width: 130px;
+    max-width: 118px;
 }
 
 .splide__progress__bar {
   height: 3px;
   background-color: var(--dark-blue);
-
 }
