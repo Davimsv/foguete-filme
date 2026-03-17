@@ -110,6 +110,11 @@ body, main{
     width: 100%;
     max-width: 650px;
 }
+@media (max-width:768px) {
+    .intro-img{
+        position: relative;
+    }
+}
 
 /* SUMMARY */
 
